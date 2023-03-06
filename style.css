@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(56, 15, 15);
+    color:rgb(252, 252, 252);
+    height:70px;
+    font-size:20px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding:0 12px;
+    font-family: 'Rampart One', cursive;
+   
+    
+}
+nav ul{
+    list-style-type:none;
+}
+.game-container{
+   
+    display:flex;
+    justify-content: center;
+    margin-top:30px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.box{
+    border:1px solid black;
+    font-size:7vw;
+    color: rgb(67, 44, 8);
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(202, 170, 231);
+}
+.gameInfo{
+    padding: 0 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.bt{
+    border-top: 0px;
+}
+.bb{
+    border-bottom: 0px;
+}
+.bl{
+    border-left: 0px;
+}
+.br{
+    border-right: 0px;
+}
+@media screen and (max-width:800px){
+    
+    .game-container{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+}
